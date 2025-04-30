@@ -95,7 +95,10 @@ sudo docker run -d --name=grafana -p 3000:3000 grafana/grafana
 echo ""
 echo "get nosqlbench"
 
-curl -L -O https://github.com/nosqlbench/nosqlbench/releases/latest/download/nb5
+## rolling back nsb version
+##curl -L -O https://github.com/nosqlbench/nosqlbench/releases/latest/download/nb5
+curl -L -O  https://github.com/nosqlbench/nosqlbench/releases/download/5.21.3-release/nb5
+
 chmod u+x nb5
 
 sudo DEBIAN_FRONTEND=noninteractive add-apt-repository -y universe

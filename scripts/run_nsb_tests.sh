@@ -10,6 +10,6 @@ fi
 echo "Running a couple no sql bench smoke tests, check the Grafana dashboard for results"
 echo "Local IP Address: $local_ip"
 
-/home/ubuntu/datastax_nsb/nb5 cql_starter default host=${local_ip} localdc=dc1
-/home/ubuntu/datastax_nsb/nb5 /home/ubuntu/datastax_nsb/test.yaml default host=${local_ip} localdc=dc1 rampup-cycles=1000 main-cycles=100000 rate=1000
+./nb5 cql_starter default host=${local_ip} localdc=dc1
+./nb5 /home/ubuntu/datastax_nsb/test.yaml default host=${local_ip} localdc=dc1 rampup-cycles=1000 main-cycles=100000 rate=1000
 
