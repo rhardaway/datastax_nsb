@@ -193,4 +193,4 @@ chmod 600 myec2key.pem
 - Check the nosqlbench doc for more on test execution: https://docs.nosqlbench.io/introduction/
 
 ```
-> ./scripts/run_nsb_tests.sh
+./scripts/run_nsb_tests.sh
